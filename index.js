@@ -3,7 +3,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const sendMessage = require("./sendMessage");
 const builder = require("./bot/builder");
-const { getSession } = require("./sessionStore");
 
 
 const app = express();
@@ -50,8 +49,7 @@ app.post("/webhook", async (req, res) => {
 
       console.log("Mensaje recibido: ", text);
 
-      //const respuesta = await builder.process(from, text);
-      const session = getSession(from);
+
       const respuesta = await builder.process(from, text, session);
 
       await sendMessage(from, respuesta);

@@ -18,5 +18,14 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "sharp": "^0.34.5"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego-Claros17/Aria_WSP_message.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Diego-Claros17/Aria_WSP_message/issues"
+  },
+  "homepage": "https://github.com/Diego-Claros17/Aria_WSP_message#readme"
 }
