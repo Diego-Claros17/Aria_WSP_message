@@ -7,10 +7,12 @@ module.exports = [
 {
   match: () => true,
   nextState: null,
+  NUMERO_TELF:"+591 75910012",
   response: () =>
-    "Hola te comunicaste con Tiendas ARIA\n" +
-    "Este número ya no brinda atención directa.\n"+
-    "Para atención inmediata, escríbenos aquí 👉 +59175910012 "
+    "Hola te comunicaste con Tiendas ARIA👋\n"+
+    "Este número ya no atiende ventas ni consultas web.\n"+
+    `Para atención inmediata, pedidos y stock actualizado, escríbenos aquí 👉 ${NUMERO_TELF}`+
+    "Gracias por tu comprensión 💛"
 }
 
 

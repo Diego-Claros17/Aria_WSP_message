@@ -19,18 +19,11 @@ module.exports = {
     if (!flow) {
       return "No entendí 😅 ¿Puedes repetir?";
     }
-    //new section with session
-    let next;
-    if (typeof flow.nextState === "function") {
-      next = await flow.nextState(text, state, userCtx); 
-    } else {
-      next = flow.nextState;
-    }
+    
         
-    userCtx.state = next ?? null;
-    context.set(userId, userCtx);
+  
     const respuesta = await flow.response(text, state, userCtx);
-    context.set(userId, userCtx);
+   
 
     return respuesta;
   }
